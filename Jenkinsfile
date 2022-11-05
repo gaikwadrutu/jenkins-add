@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'compiling & executing c program...'
                 sh 'gcc main.c add.c -o final'
+                sh './final'
             }
         }
     }

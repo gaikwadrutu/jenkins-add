@@ -5,7 +5,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'compiling & executing c program...'
-                sh 'make'
+                sh 'gcc main.c add.c -o final'
             }
         }
     }

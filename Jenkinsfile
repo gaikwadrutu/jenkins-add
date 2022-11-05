@@ -8,12 +8,6 @@ pipeline {
                 sh 'make'
             }
         }
-        
-        stage('Deploy') {
-            steps {
-                echo 'deploying c program...'
-            }
-        }
     }
 }
 

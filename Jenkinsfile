@@ -2,17 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Compile') {
+        stage('Run') {
             steps {
-                echo 'compiling c program...'
-                sh 'gcc add.c -o run'
-            }
-        }
-        
-        stage('Execute') {
-            steps {
-                echo 'compiling c program...'
-                sh './run'
+                echo 'compiling & executing c program...'
+                sh 'make'
             }
         }
         
